@@ -6,11 +6,12 @@
 Site simples e responsivo que simula o site institucional de uma cafeteria artesanal. Contém seções: Inicio, Bem-Vindo, Nossa Historia, Cardápio, Contato e um rodapé.
 
 ## Estrutura do repositório
-- cafe-aurora/
-- ├─ index.html
-- ├─ custom.css
-- ├─ script.js
-- └─ images/
+cafe-aurora/
+├─ index.html
+├─ custom.css
+├─ script.js
+├─ bulma/
+└─ images/
 
 ## Personalização
 - Substitua as imagens em `images/`.

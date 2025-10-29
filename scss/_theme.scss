@@ -1,0 +1,193 @@
+// ============================================
+// ☕ Café Aurora Theme com Light e Dark Mode
+// ============================================
+
+/* 🌞 LIGHT MODE (padrão) */
+:root {
+
+    --bulma-primary-h: 30;
+    --bulma-primary-s: 90%;
+    --bulma-primary-l: 68%;
+
+    --bulma-link-h: 30;
+    --bulma-link-s: 66%;
+    --bulma-link-l: 57%;
+
+    --bulma-info-h: 30;
+    --bulma-info-s: 53%;
+    --bulma-info-l: 43%;
+
+    --bulma-success-h: 85;
+    --bulma-success-s: 40%;
+    --bulma-success-l: 49%;
+
+    --bulma-warning-h: 47;
+    --bulma-warning-s: 87%;
+    --bulma-warning-l: 62%;
+
+    --bulma-danger-h: 16;
+    --bulma-danger-s: 88%;
+    --bulma-danger-l: 40%;
+
+    --bulma-body-background-color: white;
+    --bulma-text: #1B1B1B;
+    --bulma-text-light: #5A5A5A;
+    --bulma-border: #b5b5b5;
+    --bulma-radius: 4px;
+    --bulma-input-border-color: #b5b5b5;
+    --bulma-input-hover-border-color: #F6AF65;
+    --bulma-icon-color: #b5b5b5;
+}
+
+/* 🌚 DARK MODE */
+[data-theme="dark"] {
+
+    /* Invertemos a luminosidade das cores principais */
+    --bulma-primary-h: 30;
+    --bulma-primary-s: 90%;
+    --bulma-primary-l: 68%;
+
+    --bulma-link-h: 30;
+    --bulma-link-s: 66%;
+    --bulma-link-l: 60%;
+
+    --bulma-info-h: 30;
+    --bulma-info-s: 50%;
+    --bulma-info-l: 55%;
+
+    --bulma-success-h: 85;
+    --bulma-success-s: 45%;
+    --bulma-success-l: 60%;
+
+    --bulma-warning-h: 47;
+    --bulma-warning-s: 80%;
+    --bulma-warning-l: 65%;
+
+    --bulma-danger-h: 16;
+    --bulma-danger-s: 80%;
+    --bulma-danger-l: 55%;
+
+    /* Fundo e texto invertidos */
+    --bulma-body-background-color: #1B1B1B;
+    --bulma-text: #FFF9F3;
+    --bulma-text-light: #DDD;
+    --bulma-border: #555;
+    --bulma-input-border-color: #555;
+    --bulma-input-hover-border-color: #FFF5EB;
+    --bulma-icon-color: #999;
+}
+
+html {
+    transition: background-color 0.3s, color 0.3s;
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: "Cabin", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-style: normal;
+    font-variation-settings: "wdth" 100;
+}
+
+.navbar {
+    background-color: rgba(0, 0, 0, 0.4);
+    transition: background-color 0.3s ease, box-shadow 0.3s ease;
+
+    &.is-scrolled {
+        background-color: #000000;
+        box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    }
+
+    .navbar-item {
+        background-color: transparent;
+        margin: 0 0.5rem;
+        color: var(--bulma-primary);
+        transition: color 0.3s ease;
+
+        &:hover {
+            color: color-mix(in srgb, var(--bulma-primary) 85%, black);
+            text-decoration: underline;
+            text-decoration-color: currentColor;
+            text-underline-offset: 4px;
+        }
+    }
+
+    .navbar-burger {
+        color: var(--bulma-primary);
+    }
+}
+
+/* Botão do tema claro */
+.button-theme-sun {
+    border: 1px solid var(--bulma-primary);
+    border-radius: 5px;
+    cursor: pointer;
+    transition: border-color 0.3s ease, color 0.3s ease;
+    color: var(--bulma-primary);
+    -webkit-tap-highlight-color: transparent;
+
+    #themeIcon i {
+        color: var(--bulma-primary);
+    }
+
+    &:hover {
+        border-color: color-mix(in srgb, var(--bulma-primary) 85%, black);
+        color: color-mix(in srgb, var(--bulma-primary) 85%, black);
+
+        #themeIcon i {
+            color: color-mix(in srgb, var(--bulma-primary) 85%, black);
+        }
+    }
+
+}
+
+/* Botão do tema escuro */
+.button-theme-moon {
+    border: 1px solid dodgerblue;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: border-color 0.3s ease, color 0.3s ease;
+    color: dodgerblue;
+    -webkit-tap-highlight-color: transparent;
+
+    #themeIcon i {
+        color: dodgerblue;
+    }
+
+    &:hover {
+        border-color: color-mix(in srgb, dodgerblue 85%, black);
+        color: color-mix(in srgb, dodgerblue 85%, black);
+
+        #themeIcon i {
+            color: color-mix(in srgb, dodgerblue 85%, black);
+        }
+    }
+}
+
+.has-text-shadow {
+    text-shadow: 3px 3px 1px black;
+}
+
+.hero {
+    background-image: url("../assets/imagem-profissional-2.jpg");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.is-orange {
+    color: #F6AF65;
+    border-color: #F6AF65;
+}
+
+button {
+    &:hover {
+        color: white;
+    }
+}
+
+.is-super-dark {
+    background-color: black;
+    color: white;
+}

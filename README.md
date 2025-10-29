@@ -8,17 +8,18 @@ Site simples e responsivo que simula o site institucional de uma cafeteria artes
 ## Estrutura do repositório
 ```
 cafe-aurora/
+├─ assets/
+├─ css/
+├─ scss/
 ├─ index.html
-├─ custom.css
 ├─ script.js
-├─ bulma/
-└─ images/
+
 ```
 
 ## Personalização
-- Substitua as imagens em `images/`.
+- Substitua as imagens em `assets/`.
 - Atualize textos em `index.html`.
-- Ajuste cores em `custom.css`.
+- Ajuste o tema em `scss/_theme.scss` e compile-o com um "Sass Compiler" de sua preferência. Jogue o `main.css` dentro de `css/main.css`.
 
 **Veja o site em**: `https://rlcarneiro97.github.io/cafe-aurora/`
 

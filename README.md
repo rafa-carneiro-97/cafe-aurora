@@ -21,7 +21,7 @@ cafe-aurora/
 - Atualize textos em `index.html`.
 - Ajuste o tema em `scss/_theme.scss` e compile-o com um "Sass Compiler" de sua preferência. Jogue o `main.css` dentro de `css/main.css`.
 
-**Veja o site em**: `https://rlcarneiro97.github.io/cafe-aurora/`
+**Veja o site em**: https://rafa-carneiro-97.github.io/cafe-aurora/
 
 ## Licença
 Este projeto está sob a licença **MIT** — sinta-se à vontade para usar como exemplo no seu portfólio. Veja o arquivo `LICENSE` para detalhes.
